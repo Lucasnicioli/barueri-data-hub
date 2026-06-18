@@ -101,7 +101,8 @@ export function ButterflyChart({ data, height = 520 }: Props) {
             <LabelList
               dataKey="masculinoNeg"
               position="left"
-              formatter={(v: number) => `${(Math.abs(v) / 1000).toFixed(1)}k`}
+              // eslint-disable-next-line @typescript-eslint/no-explicit-any
+              formatter={(v: any) => `${(Math.abs(Number(v)) / 1000).toFixed(1)}k`}
               style={{ fontSize: 10, fill: "var(--color-saude)" }}
             />
           </Bar>
@@ -114,7 +115,8 @@ export function ButterflyChart({ data, height = 520 }: Props) {
             <LabelList
               dataKey="feminino"
               position="right"
-              formatter={(v: number) => `${(v / 1000).toFixed(1)}k`}
+              // eslint-disable-next-line @typescript-eslint/no-explicit-any
+              formatter={(v: any) => `${(Number(v) / 1000).toFixed(1)}k`}
               style={{ fontSize: 10, fill: "var(--color-populacao)" }}
             />
           </Bar>
