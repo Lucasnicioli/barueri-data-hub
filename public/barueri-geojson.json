@@ -1,0 +1,159 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "alphaville",
+        "nome": "Alphaville / Tamboré",
+        "populacao": 42000,
+        "densidade": 1850,
+        "renda_media": 12400,
+        "area_km2": 22.7
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-46.930, -23.470],
+          [-46.875, -23.470],
+          [-46.875, -23.505],
+          [-46.900, -23.512],
+          [-46.930, -23.508],
+          [-46.930, -23.470]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "centro",
+        "nome": "Centro",
+        "populacao": 38500,
+        "densidade": 9200,
+        "renda_media": 4800,
+        "area_km2": 4.2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-46.885, -23.500],
+          [-46.860, -23.500],
+          [-46.858, -23.520],
+          [-46.880, -23.522],
+          [-46.888, -23.515],
+          [-46.885, -23.500]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "camargos",
+        "nome": "Parque dos Camargos",
+        "populacao": 31200,
+        "densidade": 7400,
+        "renda_media": 3200,
+        "area_km2": 4.2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-46.875, -23.470],
+          [-46.845, -23.470],
+          [-46.842, -23.498],
+          [-46.860, -23.500],
+          [-46.875, -23.505],
+          [-46.875, -23.470]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "silveira",
+        "nome": "Jardim Silveira",
+        "populacao": 44800,
+        "densidade": 11200,
+        "renda_media": 3600,
+        "area_km2": 4.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-46.860, -23.500],
+          [-46.830, -23.498],
+          [-46.828, -23.525],
+          [-46.855, -23.528],
+          [-46.858, -23.520],
+          [-46.860, -23.500]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "engenho",
+        "nome": "Engenho Novo",
+        "populacao": 52100,
+        "densidade": 13800,
+        "renda_media": 2900,
+        "area_km2": 3.8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-46.888, -23.515],
+          [-46.858, -23.520],
+          [-46.855, -23.548],
+          [-46.882, -23.548],
+          [-46.892, -23.535],
+          [-46.888, -23.515]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "belval",
+        "nome": "Jardim Belval",
+        "populacao": 39600,
+        "densidade": 8900,
+        "renda_media": 3100,
+        "area_km2": 4.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-46.930, -23.508],
+          [-46.900, -23.512],
+          [-46.895, -23.540],
+          [-46.925, -23.545],
+          [-46.935, -23.530],
+          [-46.930, -23.508]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "esperanca",
+        "nome": "Jardim Esperança",
+        "populacao": 29823,
+        "densidade": 6200,
+        "renda_media": 2700,
+        "area_km2": 4.8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-46.855, -23.528],
+          [-46.828, -23.525],
+          [-46.825, -23.555],
+          [-46.855, -23.555],
+          [-46.858, -23.548],
+          [-46.855, -23.528]
+        ]]
+      }
+    }
+  ]
+}
