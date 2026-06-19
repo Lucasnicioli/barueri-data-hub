@@ -1,4 +1,10 @@
-import { getPIBPerCapita, getPopulacaoEstimada, getIDEB } from "@/lib/apis/ibge";
+import {
+  getPIBPerCapita,
+  getPopulacaoEstimada,
+  getIDEB,
+  getPIBFallback,
+  getPopulacaoFallback,
+} from "@/lib/apis/ibge";
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
@@ -6,14 +12,27 @@ export async function GET(request: Request) {
 
   try {
     switch (tipo) {
-      case "pib":
-        return Response.json(await getPIBPerCapita());
-      case "populacao":
-        return Response.json(await getPopulacaoEstimada());
+      case "pib": {
+        try {
+          return Response.json(await getPIBPerCapita());
+        } catch {
+          return Response.json(getPIBFallback());
+        }
+      }
+      case "populacao": {
+        try {
+          return Response.json(await getPopulacaoEstimada());
+        } catch {
+          return Response.json(getPopulacaoFallback());
+        }
+      }
       case "ideb":
         return Response.json(await getIDEB());
       default:
-        return Response.json({ error: "Tipo inválido. Use: pib, populacao, ideb" }, { status: 400 });
+        return Response.json(
+          { error: "Tipo inválido. Use: pib, populacao, ideb" },
+          { status: 400 }
+        );
     }
   } catch (error) {
     console.error("[IBGE API Error]", error);

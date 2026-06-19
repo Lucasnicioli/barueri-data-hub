@@ -8,14 +8,16 @@ import {
   TrendingUp,
   GraduationCap,
   Users,
+  BookOpen,
 } from "lucide-react";
 
 const navItems = [
-  { href: "/", label: "Dashboard", icon: LayoutDashboard, color: "text-[var(--color-accent)]" },
-  { href: "/saude", label: "Saúde", icon: Heart, color: "text-[var(--color-saude)]" },
-  { href: "/economia", label: "Economia", icon: TrendingUp, color: "text-[var(--color-economia)]" },
-  { href: "/educacao", label: "Educação", icon: GraduationCap, color: "text-[var(--color-educacao)]" },
-  { href: "/populacao", label: "População", icon: Users, color: "text-[var(--color-populacao)]" },
+  { href: "/",        label: "Dashboard",  icon: LayoutDashboard, color: "text-[var(--color-accent)]" },
+  { href: "/saude",   label: "Saúde",      icon: Heart,           color: "text-[var(--color-saude)]" },
+  { href: "/economia",label: "Economia",   icon: TrendingUp,      color: "text-[var(--color-economia)]" },
+  { href: "/educacao",label: "Educação",   icon: GraduationCap,   color: "text-[var(--color-educacao)]" },
+  { href: "/populacao",label: "População", icon: Users,           color: "text-[var(--color-populacao)]" },
+  { href: "/fontes",  label: "Fontes",     icon: BookOpen,        color: "text-white/60" },
 ];
 
 export function Sidebar() {
