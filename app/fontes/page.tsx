@@ -162,9 +162,9 @@ const fontes: Fonte[] = [
 ];
 
 const statusConfig: Record<FonteStatus, { label: string; icon: typeof CheckCircle; classes: string }> = {
-  ativo:        { label: "API ao vivo",       icon: CheckCircle,    classes: "bg-green-50 text-green-700 border-green-200" },
-  estatico:     { label: "Dados verificados", icon: Clock,          classes: "bg-amber-50 text-amber-700 border-amber-200" },
-  indisponivel: { label: "API indisponível",  icon: AlertTriangle,  classes: "bg-red-50 text-red-600 border-red-200" },
+  ativo:        { label: "API ao vivo",       icon: CheckCircle,   classes: "bg-green-50 text-green-700 border-green-200" },
+  estatico:     { label: "Dados verificados", icon: Clock,         classes: "bg-green-50 text-green-700 border-green-200" },
+  indisponivel: { label: "API indisponível",  icon: AlertTriangle, classes: "bg-amber-50 text-amber-700 border-amber-200" },
 };
 
 const modulos = [...new Set(fontes.map((f) => f.modulo))];
@@ -180,31 +180,6 @@ export default function FontesPage() {
         title="Fontes dos Dados"
         subtitle="Rastreabilidade, metodologia e status de cada indicador · Barueri Data Hub"
       />
-
-      {/* Resumo */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
-        <div className="bg-green-50 border border-green-200 rounded-xl p-4 flex items-center gap-3">
-          <CheckCircle size={24} className="text-green-600 shrink-0" />
-          <div>
-            <p className="text-2xl font-bold text-green-700 font-mono">{ativos}</p>
-            <p className="text-xs text-green-600">Fontes com API ao vivo</p>
-          </div>
-        </div>
-        <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 flex items-center gap-3">
-          <Clock size={24} className="text-amber-600 shrink-0" />
-          <div>
-            <p className="text-2xl font-bold text-amber-700 font-mono">{estaticos}</p>
-            <p className="text-xs text-amber-600">Dados estáticos verificados</p>
-          </div>
-        </div>
-        <div className="bg-red-50 border border-red-200 rounded-xl p-4 flex items-center gap-3">
-          <AlertTriangle size={24} className="text-red-500 shrink-0" />
-          <div>
-            <p className="text-2xl font-bold text-red-600 font-mono">{indisponiveis}</p>
-            <p className="text-xs text-red-500">APIs com problema conhecido</p>
-          </div>
-        </div>
-      </div>
 
       {/* Legenda */}
       <div className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl p-4 mb-6">
