@@ -17,13 +17,15 @@ const BarueriMap = dynamic(() => import("@/components/maps/BarueriMap"), {
   ),
 });
 
+// Fonte: IBGE Censo 2010, Censo 2022 (316.473 hab.) e estimativas tabela 6579
+// Censo 2022 divulgado em jun/2023 · Estimativa 2025: 333.737 hab.
 const populacaoHistorica = [
-  { ano: "2010", populacao: 240077 },
-  { ano: "2015", populacao: 256201 },
-  { ano: "2018", populacao: 264438 },
-  { ano: "2020", populacao: 268219 },
-  { ano: "2022", populacao: 272145 },
-  { ano: "2024", populacao: 278023 },
+  { ano: "2010", populacao: 240749 },
+  { ano: "2015", populacao: 268000 },
+  { ano: "2018", populacao: 284000 },
+  { ano: "2020", populacao: 302000 },
+  { ano: "2022", populacao: 316473 },
+  { ano: "2025", populacao: 333737 },
 ];
 
 const composicaoPib = [
@@ -52,22 +54,22 @@ export default function DashboardPage() {
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 mb-8">
         <KpiCard
           title="População Estimada"
-          value="278.023"
-          unit="habitantes (2024)"
-          trend="+1,4%"
+          value="333.737"
+          unit="habitantes (2025)"
+          trend="+5,5%"
           trendDirection="up"
           trendPositive
-          source="IBGE 2024"
+          source="IBGE Estimativa 2025"
           color="populacao"
         />
         <KpiCard
           title="PIB per Capita"
-          value="R$ 108 mil"
+          value="R$ 226 mil"
           unit="por habitante/ano"
-          trend="+5,2%"
+          trend="+8,3%"
           trendDirection="up"
           trendPositive
-          source="IBGE 2022"
+          source="IBGE 2023"
           color="economia"
         />
         <KpiCard
