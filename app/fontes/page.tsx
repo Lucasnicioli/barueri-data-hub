@@ -29,7 +29,7 @@ const fontes: Fonte[] = [
     periodicidade: "Anual (agosto)",
     status: "ativo",
     metodo: "API REST ao vivo · revalidação a cada 30 dias",
-    url: "https://servicodados.ibge.gov.br/api/v3/agregados/6579/periodos/-6/variaveis/9324?localidades=N6[3505708]",
+    url: "https://sidra.ibge.gov.br/tabela/6579",
   },
   {
     modulo: "Economia",
@@ -40,7 +40,7 @@ const fontes: Fonte[] = [
     periodicidade: "Anual (~2 anos de defasagem)",
     status: "ativo",
     metodo: "API REST ao vivo · per capita calculado: PIB total ÷ população IBGE",
-    url: "https://servicodados.ibge.gov.br/api/v3/agregados/5938/periodos/-6/variaveis/37?localidades=N6[3505708]",
+    url: "https://sidra.ibge.gov.br/tabela/5938",
     observacao: "Variável 614 (per capita oficial) indisponível via API v3 — calculado manualmente",
   },
   {
